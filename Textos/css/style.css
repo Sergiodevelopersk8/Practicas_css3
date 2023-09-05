@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background: #9ab1f6; */
+
+    font-family: 'Raleway','sans-serif';
+}
+
+
+
+.card{
+    /* background-color: #2a265f; */
+    background-image:linear-gradient( #2a265fb6,#2a265fb4), url("../../img/genshinlagos.png");
+width: 400px;
+background-size: cover;
+background-position: center;
+color: #fff;
+margin: 40px auto;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 3px 3px 6px rgba(0,0,0,.5);
+
+}
+
+.title{
+    font-size: 30px;
+    border-bottom: 3px solid #fff;
+    padding: 7px;
+    margin-bottom: 30px;
+}
+
+.text{
+    font-weight: 300;
+    margin-bottom: 15px;
+    line-height: 2;
+    text-transform: capitalize;
+
+}
+
+.bold{
+    font-weight: bold !important ;
+}
+
+.cta{
+    display: inline-block;
+    color: blanchedalmond;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 15px 25px;
+    border-radius: 3px;
+}
+
+
+
+.container{
+background-color: #fff;
+width: 90%;
+margin: 30px auto;
+padding: 20px;
+box-shadow: 3px 3px 10px rgba(0,0,0,.2);
+text-align: center;
+}
+
+.h1{
+    text-align: center;
+}
+
+.copy{
+    padding: 10px 0;
+    /* text-align: justify; */
+    /* letter-spacing: 20px; */
+    /* word-spacing: 30px; */
+    /* text-shadow: 3px 3px 6px rgba(0,0,0,.5); */
+ /* uppercase -> mayusculas */
+/* lowercase -> minusculas */
+/* capitalize -> al principio de cada palabra lo pone en mayuscula*/
+text-transform: capitalize;
+/* line-height -> es para cada lineas */
+
+
+}
+
+.img{
+    width: 250px;
+}
+
+.enlace{
+    display: inline-block;
+    color: crimson;
+    text-decoration: none;
+    border: 1px solid;
+    padding: 10px 25px;
+    
+}

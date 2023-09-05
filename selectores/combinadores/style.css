@@ -1,0 +1,33 @@
+/* vamos a seleccionar multiples elementos especificos  con una coma ,  */
+
+h2,h3{
+    font-size: 25px;
+    font-family: 'Arial';
+}
+
+/* con espacio elegi un desendiente de un elemento ejemplo la clase contenedor que contenga un parrafo (<p>)*/
+.contenedor>p{
+color: red;
+} 
+
+.contenedor a{
+    text-decoration: none;
+    color:firebrick;
+}
+
+.contenedor>a{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* selector de hermano ayadcente  */
+
+h2+p{
+    color:gold;
+}
+
+/* a todos los elementos p que esten despues de un elemento h3 y sean sus hermanos  */
+
+h3~p{
+    color: green; 
+}

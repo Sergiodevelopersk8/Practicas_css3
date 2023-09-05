@@ -1,0 +1,56 @@
+
+.sergio{
+    border: 1px solid black;
+}
+h2{
+    color:steelblue;
+}
+
+#section{
+    border: 1px solid black;
+}
+
+.titulo{
+text-align: center;
+}
+
+.😁{
+    color: red;
+}
+
+
+/* modificar un atributo se usa corchetes */
+
+[href]{
+text-decoration: none;
+}
+
+[href="https://google.com"]{
+color: darkred;
+}
+
+/* aqui solo selecciona a los que comiencen con este de htps 
+a los href que cumplan con esas caracteristicas sin afectar a los otros href  esto es solo 
+al principio usando el simbolo ^ */
+[href^="htps"]{
+color: darkgreen;
+font-size: 30px;
+}
+
+
+/* solo selecciona los que termine al final
+ con lo que especifiques que ahorita va ser org que ya es al final
+ usando un simbolo $ */
+
+[href$="org"]{
+    background: steelblue;
+color: white;
+}
+
+/* seleccionando solo lo de en medio usando el * */
+
+
+[href*="sergio"]{
+    background: black;
+    color: white;
+}

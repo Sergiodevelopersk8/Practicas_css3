@@ -1,0 +1,56 @@
+ /* padding: 0.1px; */
+    /* margin-top:50px;
+    margin-bottom:40px;
+    margin-left:30px;
+    margin-right:25px; */
+/* margin-top:; margen hacia arriba*/
+/* margin-bottom:; margen hacia abajo */
+/* margin-left:; margen izquierda*/
+/* margin-right:; margen derecha */
+/* margin: top right bottom left; */
+/* margin:50px 30px 25px 40px; */
+/* margin: 40px 80px; aqui el primer valor se asigna a el top y al bottom que son 40px y el segundo valor es
+para la izquierda y derecha */
+/* margin: 40px 80px; */
+/* margin: auto; */
+/*
+padding-top: arriba;
+padding-bottom: abajo;
+padding-right: derecha;
+padding-left: izquierda;
+
+*/
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.box{
+    width:300px ;
+    height:150px ;
+}
+
+.box1{
+    background: steelblue;
+    
+    border:1px solid black;
+   
+
+}
+
+.box2{
+box-sizing:border-box;
+padding:20px 30px;
+background: crimson;
+margin-top:30px;
+color:white;
+margin-left:20px;
+overflow: hidden;
+border: 2px solid orange;
+}
