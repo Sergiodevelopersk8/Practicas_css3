@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
+
+body{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.box{
+    display: block;
+    background: steelblue;
+    width: 55px;
+    height: 55px;
+    margin: 10px 0;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 55px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container{
+    margin-left: -5px;
+    padding: 10px 0;
+    border: 3px solid lightcoral;
+}
+
+
+/*Por su tipo*/
+
+/* .box:only-of-type{
+    background: tomato;
+} */
+
+/* .box:first-of-type{
+    background: crimson;
+} */
+/* .box:last-of-type{
+    background: crimson;
+} */
+/* .box:nth-of-type(2){
+    background: crimson;
+} */
+
+
+/* .box:only-child{
+    background: crimson;
+} */
+/* .box:first-child{
+    background: crimson;
+} */
+
+/* .box:last-child{
+    background: crimson;
+} */
+
+/* div:nth-child(3){
+    background: crimson;
+} */
+
+/* .container :nth-child(1){
+    background: crimson;
+} */
+
+/* body :nth-child(1){
+    background: crimson;
+} */
+
+.container :nth-last-child(1){
+    background: crimson;
+}
