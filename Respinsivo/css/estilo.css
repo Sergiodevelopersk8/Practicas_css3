@@ -1,0 +1,85 @@
+:root{
+    --color:crimson;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title{
+    font-size:3rem;
+    color: crimson;
+    margin: 40px 0;
+    text-align: center;
+    font-family: monospace;
+}
+
+/*el meadia*/
+/* @media <media-type> and (expression){} */
+
+
+/* el print sirve para cuando quieras imprimir usando control + p */
+@media print{
+.title{
+    color: steelblue;
+    font-size: 5rem;
+    text-align: right;
+    font-family: cursive;
+}
+}
+
+
+
+@media screen and (min-width:700px)
+{
+body{
+    background-color: aquamarine;
+}
+}
+
+
+
+/*aqui la coma sirve como un or */
+/* @media screen and (max-width: 400px), (min-width:900px)
+{
+.title{
+    background: black;
+    color: aqua;
+}
+} */
+
+/* 
+@media screen and (orientation:portrait) and (max-width:600px){
+
+    .title{
+        text-align: left;
+        background: steelblue;
+    }
+
+} */
+
+
+/*
+orientation recibe portrait o landscape
+portrait es cuando el height es mayor
+landscape es cuando el width es mayor
+*/
+/* @media screen and (orientation:portrait){
+.title{
+    margin: 0;
+    color: steelblue;
+    background: #000;
+    height: 100vh;
+}
+} */
+
+
+/* @media screen and (max-width:600px){
+
+    .title{
+    background: black;
+    color:#fff;
+}
+} */
