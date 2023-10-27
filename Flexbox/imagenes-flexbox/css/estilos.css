@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+.links{
+
+    margin: 20px;
+    padding: 20px;
+    display: inline-flex;
+    background: steelblue;
+    flex-direction: row;
+    /*gap agrega espaciadores para los margenes*/
+    gap: 20px;
+}
+
+.link{
+    background: #fff;
+    padding: 10px 30px;
+    /* margin-bottom:  10px; */
+    text-decoration: none;
+    color:slateblue
+}
+
+
+/* .links :last-child{
+    margin-bottom: 0;
+} */
+
+.container{
+width: 90%;
+height: 300px;
+margin: 30px auto;
+display: flex;
+padding: 20px;
+border: 3px solid #000;
+gap: 10px;
+flex-direction: row;
+}
+
+.item{
+
+    background: crimson;
+    color: #fff;
+    font-size: 2rem;
+    /* line-height: 200px; */
+    text-align: center;
+    flex-basis: 50%;
+    /* width: 100%; */
+    /* height: 100%; */
+}
+
+
+/*primera forma de adaptar una imagen*/
+
+/*
+.figure{
+
+flex-basis: 50%;
+height: 100%;
+background-image: url('../../../img/imagen1.jpg');
+background-position: center;
+background-size: cover;
+
+}
+*/
+
+/*segunda forma*/
+.figure{
+flex-basis: 50%;
+height: 100%;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
+}

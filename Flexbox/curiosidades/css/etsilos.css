@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    font-family: sans-serif;
+}
+
+
+.links{
+
+    margin: 20px;
+    padding: 20px;
+    display: inline-flex;
+    background: steelblue;
+    flex-direction: row;
+    /*gap agrega espaciadores para los margenes*/
+    gap: 20px;
+}
+
+.link{
+    background: #fff;
+    padding: 10px 30px;
+    /* margin-bottom:  10px; */
+    text-decoration: none;
+    color:slateblue
+}
+
+
+/* .links :last-child{
+    margin-bottom: 0;
+} */
+
+.container{
+
+}
+
+.item{
+
+}
