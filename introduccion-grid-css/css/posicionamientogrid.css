@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial';
+}
+
+.grid{
+    max-width: 700px;
+    width: 90%;
+    height: 500px;
+    margin: 20px auto;
+    outline: 3px solid #000;
+    display: grid;
+    /*esto defina las columnas que va tener la grid*/
+    /*primera columna -> 100px segunda columna -> 2cm   tercera columna ->30%*/
+    /*las filas se generan automaticamente*/
+  /* grid-template-columns: 100px 2cm 30%; */
+  /* grid-template-columns: repeat(columnas a repetir -> 5, porcentaje o medida de las columnas -> 10%  
+  con este valor se intercalan osea prmer valor  y despues este valor -> 50px); */
+  /* grid-template-columns: repeat(3,20px 50px); */
+  /*
+  el fr son fracciones y divide el espacio disponible en 
+  fracciones  
+  grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns: 3fr 1fr 1fr; */
+  grid-template-columns:repeat(4,1fr);
+
+/*filas explicitas que no se generan en automatico*/
+
+grid-template-rows: repeat(4, 1fr);
+}
+
+.grid__item{
+    color:#fff;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+    
+}
+
+.grid :nth-child(1){
+    background: crimson;
+/* grid-column-start: 3;
+grid-column-end: 5;
+grid-row-start: 3;
+grid-row-end: 5; */
+/*short hand de grid column tanto start como end*/
+/* grid-column: start->3 separacion -> /  end -> 5; */
+grid-column: 3/5;
+/* grid-row: start->3 separacion -> /  end -> 5; */
+grid-row: 3/5;
+
+
+}
+.grid :nth-child(2){
+    background: darkorchid;
+/* grid-column-start: 3;
+grid-row-start: 1;
+grid-row-end: 3; */
+}
+.grid :nth-child(3){
+    background: steelblue;
+}
+.grid :nth-child(4){
+    background: brown;
+}
+.grid :nth-child(5){
+    background: chocolate;
+}
+.grid :nth-child(6){
+    background: midnightblue;
+}
