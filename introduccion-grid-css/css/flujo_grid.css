@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial';
+}
+
+.grid{
+    max-width: 700px;
+    width: 90%;
+    height: 500px;
+    margin: 20px auto;
+    outline: 3px solid #000;
+    display: grid;
+    /* grid-template-columns:repeat(3,1fr); */
+    /* grid-template-rows: repeat(3, 1fr); */
+    /* grid-auto-flow: ; define el flujo 
+    del grid    por defecto es row */
+    /* grid-auto-flow: column; */
+    /* grid-auto-flow: row; */
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-flow: column;
+
+/*grid-auto-columns:*/
+grid-auto-columns:1fr ;
+/*grid-auto-rows:*/
+grid-auto-rows: 1fr;
+
+
+
+}
+
+.grid__item{
+    color:#fff;
+    font-size: 3rem;
+    text-align: center;
+    /* padding-top: 1rem; */
+    background: crimson;
+    
+}
+
+.grid :nth-child(1){
+    background: crimson;
+}
+.grid :nth-child(2){
+    background: darkorchid;
+}
+.grid :nth-child(3){
+    background: steelblue;
+   
+}
+.grid :nth-child(4){
+    background: brown;
+}
+.grid :nth-child(5){
+    background: chocolate;
+}
+.grid :nth-child(6){
+    background: midnightblue;
+}

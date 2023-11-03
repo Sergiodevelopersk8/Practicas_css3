@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Arial';
+}
+
+
+.grid {
+    width:90%;
+    max-width: 700px;
+    height: 600px;
+    outline: 3px solid #000;
+    margin: 10px auto;
+    display: grid;
+    /* grid-template-areas:"sergio kiernan landry abbydonelli" "sergio kiernan landry abbydonelli"; */
+    gap: 10px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "header header header main main"
+    "header header header .      ."
+    "sidebar sidebar footer footer footer";
+}
+
+.grid__item {
+    font-size: 2rem;
+    color:#fff;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.header {
+    background: crimson;
+    grid-area: header;
+}
+.main {
+    background: steelblue;
+    grid-area: main;
+}
+.sidebar {
+    background: darkmagenta;
+    grid-area: sidebar;
+}
+.footer {
+    background: chocolate;
+    grid-area: footer;
+}
+
+
+@media screen and (max-width:500px){
+    .grid {
+        grid-template-columns:repeat(3,1fr);
+        grid-template-areas: 
+        "header header header "
+        "main main sidebar "
+        "footer footer footer ";
+    }
+}

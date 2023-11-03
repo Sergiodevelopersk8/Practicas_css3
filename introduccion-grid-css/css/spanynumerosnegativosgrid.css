@@ -50,7 +50,12 @@ grid-template-rows: repeat(4, 1fr);
 }
 .grid :nth-child(3){
     background: steelblue;
-    grid-column: span 2;
+    /* span  especifica que un elemento ocupará dos columnas en la cuadrícula */
+    /* grid-column: span 3; */
+    /* grid-row: span 3; */
+    /* shorthand de grid-column y de grid row
+    grid-area: row-start ->2/ column-start-> 2/ row-end ->3/ column-end ->5; */
+    grid-area: 2/2/3/5;
 }
 .grid :nth-child(4){
     background: brown;
