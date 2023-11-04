@@ -1,0 +1,45 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 90%;
+    max-width: 600px;
+    height: 600px;
+    margin: 30px auto;
+    outline: 3px solid #000;
+    display: grid;
+    /* grid-template-columns:[nombre de la linea ->linea1] 1fr [linea2] 1fr [linea3] 1fr [linea4]; */
+    grid-template-columns:[linea1] 1fr [linea2] 1fr [linea3] 1fr [linea4];
+    grid-template-rows: [linea-inicial] 1fr [linea-media] 1fr [linea-final];
+}
+
+
+.grid__item {
+    padding: 20px 0;
+    font-size: 2rem;
+    color:#fff;
+    text-align: center;
+}
+
+
+.grid :nth-child(1){
+    background: slateblue;
+    /* grid-column: las lineas que se van abarcar -> linea2/linea4; */
+    grid-column: linea2/linea4;
+    grid-row: linea-media/linea-final;
+}
+
+.grid :nth-child(2){
+    background: crimson;
+}
+
+.grid :nth-child(3){
+    background: coral;
+}
+
+.grid :nth-child(4){
+    background: indigo;
+}

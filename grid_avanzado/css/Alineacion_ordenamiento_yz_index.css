@@ -1,0 +1,52 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.grid {
+    width: 90%;
+    /* max-width: 600px; */
+    height: 600px;
+    margin: 30px auto;
+    outline: 3px solid #000;
+    display: grid;
+    grid-template-columns: repeat(2,150px);
+    grid-template-rows: repeat(2,150px);
+    /* justify-content:start|end|center|stretch|space-between|space-around|space-evenly; */
+    /* align-content:start|end|center|stretch|space-between|space-around|space-evenly; */
+    /* grid: rows / columns; */
+    /* grid: 50% 25% 25% / repeat(3,1fr); */
+
+}
+
+
+.grid__item {
+    padding: 20px 0;
+    font-size: 2rem;
+    color:#fff;
+    text-align: center;
+}
+
+
+.grid :nth-child(1){
+    background: slateblue;
+/* align-self: end;->esto es solo en los grids */
+/* justify-self: center;     */
+/* place-content: align-content justify-content; */
+}
+
+.grid :nth-child(2){
+    background: crimson;
+    
+}
+
+.grid :nth-child(3){
+    background: coral;
+    
+}
+
+.grid :nth-child(4){
+    background: indigo;
+    
+}
