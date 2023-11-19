@@ -1,0 +1,28 @@
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display:flex;
+    height:100vh;
+}
+
+.clip-path{
+    margin:auto;
+    width: 300px;
+    height:300px;
+    background: crimson;
+
+    /* clip-path:circle(50% at 30% 40%); */
+    /* clip-path:circle(50% at center right); */
+    /* clip-path:inset(5% 20% 15% 10% round 10px 30px 80px); */
+    /* clip-path:inset(30px round 30px 80px); */
+    /* clip-path: ellipse(40px 60px at 50% 50%); */
+    /* clip-path: polygon(0 100%, 50% 0, 100% 100%); */
+/* clip-path: polygon(50% 0, 0 38%, 100% 38%,18% 100%,82% 100% ); */
+/* clip-path: polygon(50% 0, 0 38%, 18% 100%,82% 100%,100% 38% ); */
+
+    
+}

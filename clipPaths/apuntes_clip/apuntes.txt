@@ -1,0 +1,30 @@
+creacion de un circulo
+clip-path:circle(radio -> 50% at pos_x -> 50% post_y -> 50%);
+
+creacion recorte de rectangulo o cuadrado que consta de 4 puntosque representan top, bottom,
+left right esto define el posicionamiento del recorte
+
+clip-path:inset(10% 10% 10% 10%);
+clip-path:inset(10%);
+clip-path:inset(10px 10px 10px 10px round 30px);
+
+
+el metodo ellipse permite recortar una forma ovalada debido a que hora podemos definir un alto y ancho
+al igual que circle podemos usar ( top, center, bottom, left, right) para posicionar el recorte
+
+clip-path:ellipse(ancho ->25% alto -> 40% at  50% 50%);
+clip-path:ellipse(25% 40% at  center);
+clip-path:ellipse(25% 40% at  center);
+
+el método polygon, a mi opinion es lo mas poderoso de clip-path ya que permite crear cualquier poligono debido
+a que nosotros definimos los puntos existentes
+
+clip-path:polygon(50% 0%, 0% 100%, 100% 100%);
+
+
+el metodo path, funciona como una máscara, recortando el elemento tomanddo como molde el elemento svg
+
+clip-path: path(#mask);
+
+
+
