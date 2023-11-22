@@ -1,0 +1,35 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+    outline: 2px solid crimson;
+    height: 500px;
+    width: 90%;
+    margin: 60px auto;
+}
+
+.element{
+    background: steelblue;
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    font-family: arial;
+    padding:10px;
+  
+}
+
+.container:hover .element{
+ 
+/* transform: skew( x ->10deg, y -> 10deg); es como usar clip-path 
+transform: skewX(10deg);
+transform: skewY(10deg);
+se recomienda usar por separados osea skewx y skewy 
+esto es una buena practica
+*/
+transform: skew(10deg , 10deg);
+transition: transform .5s;
+
+}

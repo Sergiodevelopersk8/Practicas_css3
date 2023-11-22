@@ -1,0 +1,35 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+    outline: 2px solid crimson;
+    height: 500px;
+    width: 90%;
+    margin: 60px auto;
+}
+
+.element{
+    background: steelblue;
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    font-family: arial;
+    padding:10px;
+  
+}
+
+.container:hover .element{
+    /* 
+    grados: 0 - 360 deg
+    radians: 0-6.28319  rad una vuelta
+    gradians: 0-400 una vuelta grad
+    turn: 0-1 turn
+     son medidas angulares
+    */
+ transform: rotate(1turn);
+ transition: transform 5s;
+
+}

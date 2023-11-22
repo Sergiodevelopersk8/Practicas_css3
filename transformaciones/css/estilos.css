@@ -1,0 +1,31 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+.container{
+    outline: 2px solid crimson;
+    height: 500px;
+    width: 90%;
+    margin: 60px auto;
+}
+
+.element{
+    background: steelblue;
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    font-family: arial;
+    padding:10px;
+}
+
+.container:hover .element{
+    /* transform: translateX(300px); */
+    /* transform: translateY(300px); */
+/*shorthand */
+/* transform: translate(x -> 300px, y -> 300px); */
+transform: translate(300px, 300px);
+
+transition: transform .4s;
+}
