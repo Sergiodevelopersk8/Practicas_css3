@@ -1,0 +1,40 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+
+    outline: 1px solid #000;
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+    
+}
+
+
+
+.element {
+   background: crimson;
+   width:120px;
+   height:120px;
+   color:#fff;
+   font-family:'Arial';
+   left: 0;
+   position:relative;    
+   /* transition: propety | duration | timing-function | delay; */
+    /* transition-property:aplicable a todos los elementos animables -> all; */
+    /* transition-duration: duracion de los segundos en que tard ala animacion ; */
+    /* transition-property:background-color, transform; */
+    /* transition-duration: .5s, 4s; */
+    transition-property:background-color, transform;
+    transition-duration: 1.5s;
+}
+
+
+.container:hover .element {
+    /* transform: scale(.5); */
+    background: steelblue; 
+    transform: translate(100%) scale(.5);
+}

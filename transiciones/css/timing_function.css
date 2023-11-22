@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+
+    outline: 1px solid #000;
+    width: 90%;
+    height: 500px;
+    margin: 30px auto;
+    
+}
+
+
+
+.element {
+   background: crimson;
+   width:120px;
+   height:120px;
+   color:#fff;
+   font-family:'Arial';
+   left: 0;
+   position:relative;    
+   /* transition: propety | duration | timing-function | delay; */
+    transition-property:background-color, transform;
+    transition-duration: 1.5s;
+    /* transition-timing-function: por defecto es -> ease; */
+    /* 
+    ease -> aumenta la velocidada la mitad de la transición despues la disminuye
+    linear -> la velocidad de la trancision sea uniforme contante no va a cambiar 
+    ease-in -> comienza lentamente pero poco a poco va aumentando hasta completarse
+    ease-out -> comienza rapidamente y despues disminuye la velocidad
+    ease-in-out -> comienza lento despues aumenta  y por ultimo disminuye 
+    steps(numero de pasos, start o end)
+    
+    */
+    
+    
+    transition-timing-function: ease-in-out;
+}
+
+
+.container:hover .element {
+    /* transform: scale(.5); */
+    background: steelblue; 
+    transform: translate(100%) scale(.5);
+}

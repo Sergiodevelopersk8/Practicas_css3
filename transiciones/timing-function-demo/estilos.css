@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: 20px auto;
+    width: 90vw;
+    outline: 2px solid #000;
+}
+
+.container:hover .clock{
+    transform:translate(calc(90vw - 100%)) rotate(360deg) ;
+    /* transform:translate(calc(90vw - 100%)); */
+}
+
+
+.function{
+    padding: 13px 0;
+}
+
+.timing-name{
+    font-family: sans-serif;  
+    font-weight: bold; 
+    color: #1a3972;
+    text-align: center;
+    font-size: 1.2rem;
+    padding-bottom:5px ;
+    margin-bottom: 5px;
+    border-bottom: 2px solid;
+}
+
+.clock{
+    width: 80px;
+    transition:transform 7s;
+}
+
+.ease-in{
+    transition-timing-function: ease-in;
+}
+.ease-out{
+    transition-timing-function: ease-out;
+}
+.ease-in-out{
+    transition-timing-function: ease-in-out;
+}
+.linear{
+    transition-timing-function: linear;
+}
