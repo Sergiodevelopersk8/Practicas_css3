@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.cuadrado{
+    width: 400px;
+    height: 400px;
+    background: steelblue;
+    margin: 40px auto;
+    overflow: hidden;
+    /* animation-name:nombre o nombres de las animaciones;   */
+    /* animation-duration: indica la cantidad de duracion de la animaciones; */
+    /* animation-timing-function: especifica la curva de aceleracion de la animacion y por defecto es ease; */
+    /* animation-iteration-count:define cuantas veces se repetira la animacion; */
+    /* n | infinite */
+    /* animation-fill-mode: define lo que sucede si los estilos de la animacion se aplican despues de que termine; */
+    /* backwars | normal | forwards | both */
+    /* animation-direction: indica desde que punto inicia y en cual termina; */
+    /* normal | reverse | alternate | alternate-reverse  */
+    /* animation-delay: define cuanto va a tardar o esperara el tiempo que se ponga ; */
+    /* animation-play-state: pausa y reproduce la animacion; */
+    /* running | paused */
+    animation-play-state: running;
+    animation-delay: 2;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-name:animaciones;  
+    animation-duration: 3s ;
+    
+    /* shorthand animation */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+
+}
+
+.cuadrado:hover{
+animation-play-state: paused;
+}
+
+@keyframes animaciones{
+to{
+    transform: scale(0.5);
+}
+
+from{
+    transform: scale(1) ;
+}
+
+
+}

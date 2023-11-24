@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.cuadrado{
+    width: 400px;
+    height: 400px;
+    background: steelblue;
+    margin: 40px auto;
+    overflow: hidden;
+   
+}
+
+
+
+
+.spiderman{
+
+width: 200px;
+margin: 0 auto;
+display: block;
+
+/* animation: nombre de la animacion ->  moverSpiderman  duracion -> 3s infinito -> infinite; */
+animation: moverSpiderman 3s infinite;
+
+}
+
+@keyframes moverSpiderman{
+ 0%{
+transform: translateY(-50px);
+}
+30%{
+    transform: translateY(0) rotate(5deg);
+
+} 
+
+50%{
+    transform: rotate(-5deg);
+}
+
+75%{
+    transform: rotate(5deg);
+}
+
+100%{
+    transform: translateY(-50px);
+}
+
+/* from indica el 0 porciento */
+/* from{
+transform: translateY(-50px);
+} */
+
+/* to indica el 100%  */
+/* to{
+transform: translateY(0);
+} */
+
+
+}
