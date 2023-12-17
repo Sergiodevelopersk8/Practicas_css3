@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.svg{
+    width:500px;
+}
+
+
+#globo{
+    transform: scale(.2);
+}
