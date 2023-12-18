@@ -1,0 +1,147 @@
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    padding: 60px 0;
+    background: #f2f2f2;
+    display: flex;
+}
+
+.form{
+    margin: auto;
+    width: 90%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 70px 1fr 70px;
+}
+
+.form_register {
+    background: #fff;
+    padding: 35px 30px;
+    border-radius: 8px;
+    grid-column: 1/4;
+    grid-row: 2/3;
+    box-shadow: 0 6px 20px rgb(0 0 0 / 20% );
+    display: grid;
+    grid-template-rows: max-content max-content 1fr;
+    max-width: 400px;
+    z-index: 1;
+}
+.gor__title {
+    font-size: 2.3rem;
+    margin-bottom: 8px;
+}
+.form__paragraph {
+    color:#969293;
+    line-height: 1.5;
+}
+.form__link {
+color: #151212;
+}
+.form__inputs {
+margin-top: 40px;
+display: grid;
+gap: 2em;
+
+}
+
+.form__input {
+    position: relative;
+    display: block;
+    width: 100%;
+    background: none;
+    color: #c6c6c6;
+    outline: none;
+    border: none;
+    padding: 10px 10px 10px 5px;
+    border-bottom: 1px solid #49454567;
+}
+
+.form__input:focus{
+    color: rgb(94 93 93);
+}
+
+.form__input:focus + .form__label, 
+.form__input:not(:placeholder-shown) + .form__label{
+    color: #2196F3;
+    transform: scale(.7) translateY(-34px);
+    transform-origin: top left;
+}
+
+.form input:focus ~ .form__bar{
+    transform: scale(1);
+}
+
+
+.form__group {
+    position: relative;
+}
+
+.form__label {
+
+    position: absolute;
+    color: #49454567;
+    font-size: 1rem;
+    left: 5px;
+    top: 10px;
+    pointer-events: none;
+    transition: .5s transform, color .3s;
+}
+
+
+.form__bar {
+    border-bottom: 1px solid #2196f3;
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scale(0);
+    transition:  .3s transform;
+    transform-origin:left bottom;
+}
+.input__submit {
+    background: #151212;
+    color:#fff;
+    padding: .8em 1.5em;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    border-radius: 6px;
+}
+.form__picture {
+    grid-column: 2/-1;
+    grid-row:1/-1;
+    background-image: url('genshinlagos.png');
+    background-size: cover;
+    border-radius: 16px;
+}
+
+@media  (max-width:768px) {
+    .gor__title{
+        font-size: 2rem;
+    }
+
+    .form_register{
+        grid-column: 1/6;
+    }
+
+}
+
+@media  (max-width:425px) {
+
+    .form_register{
+        grid-column: 1/-1;
+    }
+
+    .form__picture{
+        display: none;
+    }
+
+
+}
