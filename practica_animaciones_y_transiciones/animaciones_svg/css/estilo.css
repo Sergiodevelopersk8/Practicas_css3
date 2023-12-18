@@ -11,4 +11,43 @@
 
 #globo{
     transform: scale(.2);
+    transform-origin: top right;
+    animation: animacion 2s  forwards ;
+}
+
+#background{
+    transform: translate(-100%);
+    animation: animacion 3s forwards ;
+}
+
+
+
+@keyframes animacion{
+    to{
+        transform: unset;
+    }
+}
+
+.svg2{
+    width: 600px;
+    margin: 30px auto;
+    display: block;
+    outline: 4px solid #000;
+}
+
+#telefono{
+    animation: rotate 2s infinite alternate;
+    transform-origin: center;
+}
+
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0) scale(1);
+    }
+
+    100%{
+        transform: rotate(360deg) scale(.4);
+    }
+
 }
