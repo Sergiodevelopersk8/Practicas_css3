@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato:ital,wght@0,300;0,400;1,700&family=Montserrat:wght@100&family=Roboto:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Indie Flower', cursive;
+    display: flex;
+    min-height: 100vh;
+    position: relative;
+}
+
+.book {
+    width: 410px;
+    height: 500px;
+    background: #e0e0e4;
+    background-size: 40px 40px;
+    background-image: repeating-linear-gradient(0deg, #000, #000 1.5px, #e0e0e4 1.5px, #e0e0e4);
+    padding: 45px 0 45px 70px;
+    margin: auto;
+    border: 1px solid #000;
+    position: relative;
+}
+.book__img {
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    right: -50px;
+    position: absolute;
+    transform: rotate(360deg) scale(0);
+    }
+
+.linea {
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    background-color: crimson;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 85px;
+    left: 10px;
+    border-radius: 50%;
+    color: #fff;
+    box-shadow: 0 160px, 0 320px;
+
+}
+.line-h {
+}
+.book__title {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+}
+.book__paragraph {
+font-size: 1.3rem;
+}
+
