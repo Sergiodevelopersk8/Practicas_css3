@@ -30,6 +30,7 @@ body{
     right: -50px;
     position: absolute;
     transform: rotate(360deg) scale(0);
+    animation: image .5s 5s forwards;
     }
 
 .linea {
@@ -53,12 +54,68 @@ body{
 
 }
 .line-h {
+background: rgb(113,113,113);
+background: linear-gradient(270deg, rgba(113,113,113,1) 0%,
+ rgba(240,240,240,1) 35%,
+ rgba(186,186,186,1) 100%);
+ position:absolute;
+ width: 50px;
+ height: 15px;
+ top:95px;
+ left: -25px;
+ border-radius: 50px;
+ transform:rotate(360deg);
 }
 .book__title {
     font-size: 1.5rem;
     margin-bottom: 8px;
-}
-.book__paragraph {
-font-size: 1.3rem;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    animation: show 5s forwards;
 }
 
+@keyframes show{
+    100%{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+
+@keyframes image{
+100%{
+    transform:rotate(0) scale(1);
+}
+}
+
+.book__paragraph {
+    font-size: 1.3rem;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    animation: show 2s 5s forwards;
+}
+
+.line-h::before{
+    content: "";
+    background: rgb(113,113,113);
+    background: linear-gradient(270deg, rgba(113,113,113,1) 0%,
+     rgba(240,240,240,1) 35%,
+     rgba(186,186,186,1) 100%);
+     position:absolute;
+     width: 50px;
+     height: 15px;
+     top:160px;
+     border-radius: 50px;
+     transform:rotate(360deg);
+}
+
+.line-h::after{
+    content: "";
+    background: rgb(113,113,113);
+    background: linear-gradient(270deg, rgba(113,113,113,1) 0%,
+     rgba(240,240,240,1) 35%,
+     rgba(186,186,186,1) 100%);
+     position:absolute;
+     width: 50px;
+     height: 15px;
+     top:320px;
+     border-radius: 50px;
+     transform:rotate(360deg);
+}
