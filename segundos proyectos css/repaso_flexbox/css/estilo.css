@@ -1,0 +1,60 @@
+body{
+    background: beige;
+}
+
+
+/*aqui empieza el flexbox*/
+.flex-container{
+    border: 1px solid black;
+    background: #ccc;
+    padding: 20px;
+    /*parte del flexbox*/
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+    /*fin de la parte del flexbox*/
+    
+    width: 80%;
+    height: 600px;
+    margin: 0 auto;
+}
+/*aqui termina el flexbox*/
+
+.caja{
+    border: 1px solid rgb(70,69,69);
+    background-color: white;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    margin: 5px;
+    overflow: hidden;
+    
+}
+.c1{
+    background: lightblue;
+    /*propiedades del flexbox*/
+    order: 2;
+    flex-grow: 5;
+    /*fin de las propiedades del flexbox*/
+    flex-basis: 50%;
+}
+.c2{
+    background: lightcoral;
+    /*propiedades del flexbox*/
+    order: 3;
+    flex-grow: 1;
+    /*fin de las propiedades del flexbox*/
+}
+.c3{
+    background: lightgreen;
+    /*propiedades del flexbox*/
+    order: 1;
+    flex-grow: 1;
+    /*fin de las propiedades del flexbox*/
+}
